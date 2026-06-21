@@ -1,0 +1,18 @@
+{
+  "name": "tech-news",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Edge side-panel extension for the latest AI dev-tool news with a Node/TS aggregator + AI summaries",
+  "license": "MIT",
+  "workspaces": [
+    "server",
+    "extension"
+  ],
+  "scripts": {
+    "dev:server": "npm run dev --workspace server",
+    "dev:extension": "npm run dev --workspace extension",
+    "build": "npm run build --workspace server && npm run build --workspace extension",
+    "build:server": "npm run build --workspace server",
+    "build:extension": "npm run build --workspace extension"
+  }
+}

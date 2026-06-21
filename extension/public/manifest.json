@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "AI News — Copilot, Claude, Cursor, Codex",
+  "version": "0.1.0",
+  "description": "Latest updates from major AI dev tools in your Edge side panel, with on-demand ZH/EN AI summaries.",
+  "permissions": ["sidePanel", "storage", "alarms", "notifications"],
+  "host_permissions": ["http://localhost/*", "http://127.0.0.1/*"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "side_panel": {
+    "default_path": "src/sidepanel.html"
+  },
+  "options_page": "src/options.html",
+  "action": {
+    "default_title": "AI News",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

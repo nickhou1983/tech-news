@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI News</title>
+    <link rel="stylesheet" href="./sidepanel.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>AI News</h1>
+      <div class="header-actions">
+        <select id="lang" title="Summary language">
+          <option value="zh">中文</option>
+          <option value="en">EN</option>
+        </select>
+        <button id="refresh" title="Refresh">⟳</button>
+        <button id="open-options" title="Settings">⚙</button>
+      </div>
+    </header>
+
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Search updates…" />
+      <div id="filters" class="filters"></div>
+    </div>
+
+    <div id="status" class="status"></div>
+    <main id="feed" class="feed"></main>
+
+    <script type="module" src="./sidepanel.ts"></script>
+  </body>
+</html>
